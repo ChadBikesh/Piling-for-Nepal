@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<head>
+	<title>Comment-page</title>
+  <link rel="stylesheet"  href="javascript.js">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HqtS7/vnn0gTBa+0/VEK6LzQizfKCGQwGii6V7qOgjWfcRZC0wr4ptVq+jf+ITD6qyYwvEbX2vUEMQV2l4NFzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+	<!-- Css styling -->
+	<style>
+		body{
+			background-color: rgb(234, 234, 223);
+      
+		}
+		
+		
+		 #postyourviews {
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		height: min-content;
+		background-color: rgb(128, 85, 221);
+		margin-top: 30px;
+		border-radius: 20px;
+		color: white;
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		text-transform: uppercase;
+		padding: 10px;
+		margin-right: auto;
+		margin-left:auto;
+		box-shadow: 2px 4px 10px black;
+    margin-bottom: 200px;
+		}
+
+		.form-group {
+		margin-bottom: 10px;
+		padding: 10px;
+		}
+		
+		#comment{
+			justify-content: center;
+			align-items: center;
+		}
+		#contact{
+			margin-left: 0px;
+		}
+
+		input {
+		margin-left: 30px;	
+		width: 70%;
+		height: 30px;
+		padding: 10px;
+		border: 1px solid #3098e3;
+		border-radius: 20px;
+		}
+
+		textarea {
+		width: 70%;
+		height: 100px;
+		padding: 10px;
+		border: 1px solid #3098e3;
+		border-radius: 20px;
+		} 
+
+		.submit-button {
+		background-color: #333;
+		color: white;
+		height: 40px;
+		width: 100px;
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		border: none;
+		cursor: pointer;
+		margin-left:auto;
+		margin-right: auto;
+		font-size: larger;
+		}
+		.commentdisplay{
+			width: 70%;
+			height: min-content;
+			display: flex;
+			flex-direction:column;
+			justify-content: space-between;
+			background-color: rgb(250, 205, 83);
+			padding:  30px;
+			box-shadow: 2px 4px 10px black;
+			border-radius: 30px;
+			margin-top: 20px;
+		}
+		.commentdate{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	 .commentname{
+		padding: 10px;
+		border-radius: 10px;
+		justify-content: center;
+		height: 30px;
+		width:200px;
+		align-items: center;
+		background-color:whitesmoke;
+		font-family: Oswald;
+		letter-spacing: 1px;
+		font-weight: bold;
+	 }
+
+
+	  .dateofpost{
+		padding: 10px;
+		border-radius: 10px;
+		justify-content: center;
+		height: 30px;
+		width:250px;
+		align-items: center;
+		background-color:whitesmoke;
+		font-family: Oswald;
+		letter-spacing: 1px;
+	
+	 }
+	 .commentsection {
+		padding: 10px;
+		border-radius: 10px;
+    margin-left: 20px;
+		justify-content: center;
+		height: min-content;
+		width: 30%x;
+		align-items: center;
+		background-color:whitesmoke;
+		margin-top: 10px;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		.
+	 }
+	 mainsection {
+		margin-bottom: 100px;
+		position: relative;
+		top:90px;
+    height: min-content;
+	 }
+
+
+	 @keyframes flashing {
+  0% {
+    color: whitesmoke;
+  }
+  50% {
+    color: rgb(0, 242, 255);
+  }
+  100% {
+    color: rgb(204, 255, 0);
+  }
+}
+
+#flashingText {
+  animation: flashing 1s infinite;
+}
+
+/* .address ul{
+  max-width: 200px;
+}
+ */
+/* addre */
+
+iframe {
+  z-index: 1;
+}
+
+
+/* Responsive bar */
+
+
+
+.responsive{
+  display: none;
+  position: fixed;
+  flex-direction:column;
+  right: 20px;
+  top: 60px;
+  align-items: center;
+  height:min-content;
+  width: 250px;
+  background-color: rgba(14, 11, 88, 0.6);
+  border-radius: 10px;
+  z-index: 1;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.responsive  .Contact{
+  background-color: rgb(0, 208, 255);
+  padding: 6px;
+  border-radius: 7px;
+  color: whitesmoke;
+}
+.responsive ul {
+display: flex;
+flex-direction:column;
+align-items: center;
+
+}
+
+.responsive li a{
+  font-size: 20px;
+
+ 
+  text-decoration: none;
+  color: white;
+  font-family: Belanosima;
+  cursor: pointer;
+  
+}
+.responsive li{
+  list-style: none;
+  padding:  15px 10px;
+} 
+
+.hamburger {
+  position:fixed;
+  color:wheat;
+  cursor: pointer;
+  right: 20px;
+  top: 15PX;
+  z-index: 1;
+  font-size: larger;
+}
+
+.hamburger{
+display: none;
+
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul  { 
+    display: none;
+    
+  }
+  .nav .Contact{
+    display: none;
+  } 
+
+.responsive {
+display: none;
+
+}
+  .hamburger {
+    display: block;
+  
+  }
+
+ .show1 {
+  display: block!important;
+ }
+
+}
+#my-iframe {
+  min-height: 80px;
+}
+  </style>
+  	<!-- End of Css styling -->
+</head>
+<body>
+  <header> 
+    <div style="position: relative;">
+       <iframe id="my-iframe" src="navbar2.html" frameborder="0" width="100%" height="20%" 
+       scrolling="no" style="position: fixed; top: 0; left: 0; z-index: 1;" onmouseover="this.style.height='40%'" onmouseout="this.style.height='20%'" target="_self"></iframe>
+   </div>
+  </header>
+<mainsection>
+	<div class="commentdisplay">
+		<div class="commentdate">
+		<div class="commentname"> <i class="fa-solid fa-user"></i> Traveller Lucky</div>	
+		<div class="dateofpost">August 18, 2018 at 10:17 AM</div>	
+		</div>
+		<div class="commentsection">dear sir i have also a piling company on kathmanu so i want topost a add on ur site.</div>	
+	</div>
+
+	<div class="commentdisplay">
+		<div class="commentdate">
+		<div class="commentname"> <i class="fa-solid fa-user"></i> Grids Infrastructure</div>	
+		<div class="dateofpost">December 22,2019 at 5:16 AM</div>	
+		</div>
+		<div class="commentsection">Dear sir, 
+			We are manufacturing piling tools in india you have any requirement please contact ,info@gridsinfrastructure.com,
+			www.gridsinfrastructure.com</div>	
+	</div>
+
+	<div class="commentdisplay">
+		<div class="commentdate">
+		<div class="commentname"> <i class="fa-solid fa-user"></i> Javed Tavseer</div>	
+		<div class="dateofpost">July 21, 2021 at 11:15 PM</div>	
+		</div>
+		<div class="commentsection">Hi <br>
+			This is Javed Tavseer from India i have 3 year diploma and B.Tech respectively and i have 3 year Experience in piling foundation At Mumbai India...
+			If you have any requirement regarding civil engineer then please contact me
+			Email I'd- tabsheerjaved@gmail.com
+			+919161035052</div>	
+	</div>
+
+	<div class="commentdisplay">
+		<div class="commentdate">
+		<div class="commentname"> <i class="fa-solid fa-user"></i> Common Business Solution</div>	
+		<div class="dateofpost">July 4, 2022 at 2:31 AM</div>	
+		</div>
+		<div class="commentsection">Geotech Drilling & Construction Pvt. Ltd., Buddhanagar, Kathmandu, 9852050524, www.geotechdc.com</div>	
+	</div>
+
+	
+	<div class="commentdisplay">
+		<div class="commentdate">
+		<div class="commentname"> <i class="fa-solid fa-user"></i> Anonymous</div>	
+		<div class="dateofpost">February 26, 2023 at 7:03 AM</div>	
+		</div>
+		<div class="commentsection">9860450766 Pilling,Drilling,grouting service....</div>	
+	</div>
+
+
+	<form action= "https://formspree.io/f/xknlgdqq" id="postyourviews" method="post">
+    <h2>Post Your Views</h2>
+		<div class="form-group">
+		  <label for="name">Name:</label>
+		  <input type="text" id="name" name="name" placeholder="Your Name" required>
+		</div>
+		<div class="form-group">
+		  <label for="comment">Comment:</label>
+		  <textarea id="comment" name="comment" placeholder="Your comments" required></textarea>
+		</div>
+		<div class="form-group">
+		  <label for="contact">Contact:</label>
+		  <input type="text" id="contact" name="contact" required>
+		</div>
+		<input type="submit" value="Submit" class="submit-button"> 
+	  </form>
+</mainsection>
+<footer>
+  <div style="position: relative;">
+    <iframe src="footer.html" frameborder="0" width="100%" height="20%;" 
+    scrolling="no" style="position: fixed; bottom: 0; left: 0; z-index: 1;target"_self"></iframe>;
+</div>
+</footer>  
+<!-- Creation of responsive bar -->
+<div class="responsive">
+	<ul class="show">
+		<li><a href="index.html" >Home </a></li>
+		<li><a href="list of piling companies.html" >Piling companies in Nepal</a></li>
+		<li><a href="Methodofpilinginnepal.html" >Method in Nepal</a></li>
+		<li><a href="mailto:pilingfornepal@gmail.com" class="Contact" target="_top">Write Us</a></li>
+	</ul> 
+	
+		</div>
+		<div class="hamburger">
+			<i class="fas fa-bars"></i>
+		</div>
+		<script>
+		const hamburger = document.querySelector('.hamburger');
+		const menu2 = document.querySelector('.menu');
+		const menu = document.querySelector('.responsive');
+  
+  
+		hamburger.addEventListener('click', () => {
+			menu.classList.toggle('show1');
+		});
+  
+		menu.addEventListener('click', () => {
+			if (window.innerWidth <= 768) {
+				menu.classList.remove('show1');
+			}
+		}); 
+		</script> 
+		<!-- End of responsivenav bar -->
+ 
+</body>
+</html>

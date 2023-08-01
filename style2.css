@@ -1,0 +1,226 @@
+* {
+    padding:0;
+    margin:0; 
+    box-sizing: border-box;
+  
+ }
+
+ section{
+ margin-bottom: 650px;
+ }
+
+ .main{
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    top: 53px;
+    bottom: 100px;
+    background-image: url(Images/intro.jpg);
+    background-size:cover;
+    background-position-y:top;
+    height:650px;
+    border-bottom: solid 3px rgb(0, 208, 255);
+ }
+
+
+ .mainsection{
+   align-items: center;
+   justify-content: center;
+   padding: 50px 0px;
+   
+ }
+ .mainsection p{
+    font-family: 'Playfair Display', serif;;
+    font-size: large;
+    line-height: 30px;
+    text-align: justify;
+    word-wrap: break-word;
+    max-width: 600px;
+    min-width:400px;
+    background-color: rgba(221, 179, 120, 0.738);
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 160px;
+    color: black;
+    font-weight:bold;
+    margin-bottom: 0;
+   
+    
+ }
+ .mainsection h1{
+font-family: Oswald;
+color: white;
+margin-left:150px;
+letter-spacing: 2px;
+font-size:xx-large;
+
+ }
+.piletechnique{
+  display: flex;
+}
+
+
+ .Method{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  position: relative;
+  background-repeat: repeat;
+  top: 0px;
+  overflow-y:visible;
+  margin-top: 0;
+
+  background: radial-gradient(circle at bottom left, white, #56a3bb);
+ /*  background-image: url(Images/pilingintro.jpg); */
+
+/*   backdrop-filter: blur(10px); */
+  width: 100%;
+  height: 800px;
+  border-top: solid 2px black; 
+  padding: 0 40px;
+}
+
+.Method ul {
+  padding: 0 30px;
+  margin-left: 30px;
+  backdrop-filter: blur(5px);
+  width: 485px;
+  background-color: rgb(9, 67, 72, 0.6);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+ 
+}
+ .Method li {
+
+  padding: 10px;
+  list-style:upper-roman;
+  color:aliceblue;
+
+  list-style:upper-roman;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .Method li a {
+  padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+.Method li a:hover{
+  color:rgb(211, 206, 57);
+}
+ .heading{
+   color:white;
+   padding: 10px;
+   margin-top: 20px;
+   font-family: oswald;
+   letter-spacing: 2px;
+   text-shadow: 2px 2px 4px black;
+   background-color: rgba(221, 179, 120, 0.738);
+   width:fit-content;
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+.Container{
+  background-color: antiquewhite;
+  width: 200px;
+  height: 400px;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.Container1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  /* border: solid 3px black; */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+  color:whitesmoke;
+  font-size: 30px;
+  text-align:justify;
+  overflow-y: visible;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-image: url(https://img.directindustry.com/images_di/photo-g/57763-13784205.webp);
+} 
+
+.Container1:hover{
+scale: 1.4;
+transform: rotateY(360deg);
+
+}
+
+.Container2{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 20px right;
+  background-position: -50px;
+  /* border: solid 3px black; */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+  color:whitesmoke;
+  font-size: 30px;
+  text-align:justify;
+  overflow-y: visible;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-image: url(https://www.liebherr.com/shared/media/construction-machinery/deep-foundation/assistance-systems/auger-cleaner/liebherr-schneckenputzer-auger-cleaner-kelly-drilling-kellybohren_imglcampaignslider.jpg);
+} 
+
+.Container2:hover{
+scale: 1.4;
+transform: rotateY(360deg);
+
+}
+.Container3{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  /* border: solid 3px black; */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+  color:whitesmoke;
+  font-size: 30px;
+  text-align:justify;
+  overflow-y: visible;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-image: url(https://www.soilmec.com/media/immagini/4107_z_zoom_5.jpg);
+} 
+
+.Container3:hover{
+scale: 1.4;
+transform: rotateY(360deg);
+
+}
+.Container4{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  /* border: solid 3px black; */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+  color:whitesmoke;
+  font-size: 30px;
+  text-align:justify;
+  overflow:hidden;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-image: url(https://5.imimg.com/data5/SELLER/Default/2021/8/JT/IB/SJ/35886380/dmc-piling-services-1000x1000.jpg);
+} 
+
+.Container4:hover{
+scale: 1.4;
+transform: rotateY(360deg);
+
+}
+#my-iframe {
+  min-height: 80px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <style>
+      
+    </style>
+   <script>
+    const flashingText = document.getElementById('flashingText');
+    flashingText.style.animation = 'flashing 1s infinite';
+   </script>
+   
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet"  href="style2.css">
+    <link rel="stylesheet"  href="javascript.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HqtS7/vnn0gTBa+0/VEK6LzQizfKCGQwGii6V7qOgjWfcRZC0wr4ptVq+jf+ITD6qyYwvEbX2vUEMQV2l4NFzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <div style="position: relative;">
+           <iframe id="my-iframe" src="navbar2.html" frameborder="0" width="100%" height="10%" 
+           scrolling="no" style="position: fixed; top: 0; left: 0; z-index: 1;" onmouseover="this.style.height='40%'" onmouseout="this.style.height='10%'" target="_self"></iframe>
+       </div>
+      </header> 
+<section class="main">
+    <div class="mainsection">
+        <h1> Introduction</h1>
+         <p>   
+         Pile Foundation is the technique to transfer
+        the loads of the structures to the deeper and 
+         competent soil layer. It plays a significant
+         role to hold the structures securely and rigidly
+         to the original position. In other words, it may 
+         be also defined as the foundation system provided 
+        for the large and heavy structures with purpose of 
+         transferring their static and dynamic loads to the ground level. 
+        These types of foundation is very popular to the large commercial
+        buildings, apartments and bridges mostly in the Nepalese scenario.  
+        </p>
+       </div> 
+       <h2 class="heading"> Existing Method of Pile Construction In Nepal </h2>
+       <!-- <div class="Piletechnique"> -->
+        <div class="Method">
+                
+            <ul>
+                <li><a href="Methodofpilinginnepal.html#CFA" target="_top">Continuous Flight Auger Drilling (CFA)</a></li>
+                <li><a href="Methodofpilinginnepal.html#AugerKelly" target="_top">Auger Drilling with Kelly System</a></li>
+                <li><a href="Methodofpilinginnepal.html#Micropiling" target="_top">Bored-Full-Case Piling Techniques</a></li>
+                <li><a href="Methodofpilinginnepal.html#DMC" target="_top">Direct Mud Circulation Piling (DMC)</a></li>
+            </ul>
+        <!--  </div> -->
+         <div class=" Container Container1">CFA</div>
+         <div class=" Container Container2">Auger</div>
+         <div class="Container Container3">BFC</div>
+         <div class=" Container Container4">DMC</div>
+        </div> 
+ </section>
+    <footer>
+        <iframe src="footer.html" frameborder="0" width="100%" height="80" scrolling="no" target="_self"></iframe>               
+   </footer>  
+
+
+   <!-- Creation of responsive bar -->
+   <div class="responsive">
+    <ul class="show">
+        <li><a href="index.html" >Home </a></li>
+        <li><a href="list of piling companies.html" >Piling companies in Nepal</a></li>
+        <li><a href="Methodofpilinginnepal.html" >Method in Nepal</a></li>
+        <li><a href="mailto:pilingfornepal@gmail.com" class="Contact" target="_top">Write Us</a></li>
+    </ul> 
+    
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu2 = document.querySelector('.menu');
+        const menu = document.querySelector('.responsive');
+
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show1');
+        });
+
+        menu.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                menu.classList.remove('show1');
+            }
+        }); 
+        </script> 
+        <!-- End of responsivenav bar -->
+</body>
+</html>

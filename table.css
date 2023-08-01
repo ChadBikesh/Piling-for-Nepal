@@ -1,0 +1,57 @@
+
+html{
+   height:100%;
+    background:radial-gradient(circle at bottom right, #f2ebf0cb, #83aff6);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;    
+    position: relative;
+    border-radius: 3px;
+    border:solid 2px black;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    overflow:auto;
+   
+  }
+    
+}
+
+td{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid rgb(250, 243, 243, 0.8) 2px;
+    column-width: auto;
+    padding: 3px;
+
+}
+th{
+    color:white;
+    background-color:rgb(113, 66, 18,0.9);
+    font-size: 20px;
+    border: solid white 2px;
+    padding: 2px;
+    font-family: 'PT Sans Narrow';
+    
+
+}
+tbody{
+    background-color: beige;
+    
+}
+tbody tr:nth-child(even) {
+    background-color:rgb(179, 229, 148);
+}
+
+tbody tr:hover{
+    background-color: rgb(145, 207, 232);
+}
+#my-iframe {
+    min-height: 80px;
+  }

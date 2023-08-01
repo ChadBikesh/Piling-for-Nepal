@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  
+ <link rel="stylesheet"  href="style.css">
+<link rel="stylesheet"  href="style2.css"> 
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HqtS7/vnn0gTBa+0/VEK6LzQizfKCGQwGii6V7qOgjWfcRZC0wr4ptVq+jf+ITD6qyYwvEbX2vUEMQV2l4NFzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Lobster&family=Oswald&family=PT+Sans+Narrow&family=Playfair+Display&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+   <div style="position: relative;">
+        <iframe id="my-iframe" src="navbar2.html" frameborder="0" width="100%" height="50%" scrolling="no" style="position: fixed; top: 0; left: 0; z-index: 1;"target="_self"></iframe>
+        <div style="position: relative; z-index: 2; margin-top: 1px;">     
+</header>   
+ 
+<div class="responsive">
+    <ul class="show">
+        <li><a href="index.html" >Home </a></li>
+        <li><a href="list of piling companies.html" >Piling companies in Nepal</a></li>
+        <li><a href="#" >Method in Nepal</a></li>
+        <li><a href="#" class="Contact" target="_top">Contact Us</a></li>
+    </ul> 
+    
+ </div>
+ <div class="hamburger">
+    <i class="fas fa-bars"></i>
+</div>
+<script>
+const hamburger = document.querySelector('.hamburger');
+const menu2 = document.querySelector('.menu');
+const menu = document.querySelector('.responsive');
+/* const dropdown = document.querySelector('.dropdown'); */
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show1');
+});
+
+menu.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+        menu.classList.remove('show1');
+    }
+});
+</script>  
+</body>
+</html>

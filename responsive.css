@@ -1,0 +1,16 @@
+.responsive {
+    display: flex;
+  }
+  .responsive ul {
+  display: flex;
+  flex-direction:column;
+  padding: 20px;
+  }
+  
+  .responsive ul li{
+    background-color: black;
+  }
+  
+  .responsive i {
+   font-size: larger;
+  }

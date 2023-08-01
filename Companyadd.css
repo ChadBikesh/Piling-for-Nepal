@@ -1,0 +1,74 @@
+body{
+  background-image: url(Images/Company\ advertisement.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  z-index: 2;
+  
+}
+
+h1 {
+    text-align: center;
+    color:white;
+  }
+  
+  form {
+    max-width: 500px; 
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding:20px;
+    background: radial-gradient(circle at bottom right, #e74b4b89, #6790b8);
+    z-index: 2;
+
+   
+  }
+  
+  label {
+    margin-top: 20px;
+    color:white;
+    font-family: Oswald;
+    letter-spacing: 3px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width:fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: larger;
+    text-transform: uppercase;
+    font Oswald;
+  
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4562a0;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus {
+    border-color: #4CAF50;
+  }
+  #my-iframe {
+    min-height: 80px;
+  }
